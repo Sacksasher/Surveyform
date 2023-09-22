@@ -1,0 +1,68 @@
+First Project: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title"> FreeCodeCamp Survey Form</h1>
+  <p id="description"> Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">
+      Name
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </label>
+
+    <label for="email" id="email-label">
+      Email
+      <input id="email" type="email" placeholder="Enter your Email" required>
+    </label>
+
+    <label for="number" id="number-label">
+      Age (optional)
+      <input min="18" max="65" id="number" type="number" placeholder="Age">
+    </label>
+
+    <label>
+        What is your favorite language
+        <select id="dropdown">
+            <option value="MontyPython">MontyPython</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+        </select>
+    </label>
+
+    <p>Which do you prefer</p>
+    <label for="preference">
+        Front-end
+        <input type="radio" value="front-end" name="preference" id="preference" class="inline"> <!-- class="inline" will become active when added into the CSS file -->
+    </label>
+    <label for="preference">
+        Back-end
+        <input type="radio" value="back-end" name="preference" id="preference" class="inline"> <!-- class="inline" will become active when added into the CSS file -->
+    </label>
+
+    <p>Which coding languages do you know (check all that apply)</p>
+    <div>
+      <input type="checkbox" id="Python" value="Python"/>
+      <label for="Python">Python</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Java" value="Java"/>
+      <label for="Java">Java</label>
+    </div>
+
+    <div>
+    <label for="favorite_code">What made you choose your favorite coding language</label>
+    </div>
+    <div>
+    <textarea id="favorite_code" id="favorite_code" col="30" rows="10">wasd</textarea>
+    </div>
+
+    <input type="submit" Value="Submit" id="submit">
+  </form>
+</body>
+</html>
